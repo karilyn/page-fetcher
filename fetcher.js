@@ -29,7 +29,6 @@ request(URL, (error, response, body) => {
   })
 
 
-  // console.log('statusCode: ', response && response.statusCode);
   fs.writeFile(`${path}`, body, 'utf8', function(error) {
     if (error) {
       console.log('error occurred: ', error)
